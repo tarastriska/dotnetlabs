@@ -1,2 +1,2 @@
 # dotnetlabs
-Dot net examples
+This repository contains examples of C# language.
