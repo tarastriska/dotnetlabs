@@ -4,7 +4,6 @@ WORKDIR /app
 # Build
 FROM mcr.microsoft.com/dotnet/core/sdk:2.2 AS build
 COPY . ./
-
 WORKDIR /HelloWorld
 RUN dotnet build -c Release
 
