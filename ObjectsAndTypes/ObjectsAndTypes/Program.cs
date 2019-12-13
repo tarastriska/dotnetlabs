@@ -14,6 +14,7 @@ namespace ObjectsAndTypes
             animal.IsHealthy = false;
 
             Console.WriteLine($"Is our animal hungry? - {animal.IsHungry}");
+            Console.WriteLine(animal.FullDescription());
 
             var anonymous = new
             {
