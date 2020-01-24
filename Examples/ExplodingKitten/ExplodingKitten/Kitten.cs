@@ -5,12 +5,7 @@ namespace ExplodingKitten
 {
     public class Kitten
     {
-        public Kitten()
-        {
-           
-        }
-
-        public string getCat(string command)
+        public string GetCat(string command)
         {
             string phrase = @"     \`   " + command + "'/";
             StringBuilder sb = new StringBuilder();
@@ -23,23 +18,23 @@ namespace ExplodingKitten
             return sb.ToString();
         }
 
-        public void sayHi()
+        public void SayHi()
         {
-            Console.WriteLine(this.getCat("Hi"));
+            Console.WriteLine(this.GetCat("Hi"));
         }
 
-        public void describePerson(string person)
+        public void DescribePerson(string person)
         {
             switch (person)
             {
                 case "lex":
-                    Console.WriteLine(this.getCat("vorovskoy"));
+                    Console.WriteLine(this.GetCat("vorovskoy"));
                     break;
                 case "oleh":
-                    Console.WriteLine(this.getCat("rozbiynuk"));
+                    Console.WriteLine(this.GetCat("rozbiynuk"));
                     break;
                 default:
-                    Console.WriteLine(this.getCat("Don't care"));
+                    Console.WriteLine(this.GetCat("Don't care"));
                     break;
             }
         }

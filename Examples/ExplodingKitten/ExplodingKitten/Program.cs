@@ -3,16 +3,21 @@ namespace ExplodingKitten
 {
     class Program
     {
+        public void Greeting()
+        {
+            Console.WriteLine("Ask for something ?");
+        }
+
         static void Main(string[] args)
         {
-            var kitten = new Kitten();
-            kitten.sayHi();
-            Console.WriteLine("Ask for something ?");
+            var Kitten = new Kitten();
+            Kitten.SayHi();
+            Helper.Greeting();
             var a = Console.ReadLine();
             while(a != "exit")
             {
-                kitten.describePerson(a);
-                Console.WriteLine("Ask for something ?");
+                Kitten.DescribePerson(a);
+                Helper.Greeting();
                 a = Console.ReadLine();
             }
         }
